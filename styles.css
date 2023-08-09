@@ -1,0 +1,30 @@
+:root {
+    --font-size-s: 0.5rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.5rem;
+}
+.all-cont {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    background-color: white;
+}
+.item-cont {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(57, 56, 56);
+  
+}
+.item-cont > .item {
+  padding: 1rem;
+  border: solid 1.5px white;
+  color: white;
+  text-align: center;
+  font-size: var(--font-size-l);
+  
+}
